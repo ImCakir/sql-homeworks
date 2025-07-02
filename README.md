@@ -1,3 +1,4 @@
+
 # SQL Ödevleri – DVD Rental Veritabanı Uygulamaları
 
 Bu depo, SQL öğrenim sürecim boyunca gerçekleştirdiğim ödevleri içermektedir.  
@@ -34,3 +35,46 @@ Bu projede kullanılan tablolar, PostgreSQL için popüler örnek veritabanı ol
 ## 🎯 Amaç
 
 Temel SQL becerilerimi pekiştirmek ve GitHub üzerinde projelerimi belgelendirmek.
+
+
+## 📚 02-Homework - Ödev 2: SQL Sorguları ile Veri Analizi
+
+Bu bölümde, **dvdrental** örnek veri tabanı kullanılarak çeşitli SQL sorguları gerçekleştirilmiştir.  
+Amaç, **SQL'in WHERE koşulları, BETWEEN ve IN operatörleri** gibi temel sorgu yapılarının pratikte nasıl kullanıldığını pekiştirmektir.
+
+---
+
+### İçerik ve Kullanılan Önemli SQL Kavramları
+
+- **BETWEEN ... AND**: Bir sütundaki değerlerin belirli bir aralıkta olup olmadığını kontrol etmek için kullanıldı.  
+- **IN Operatörü**: Birden fazla değeri kontrol etmek için pratik ve okunabilir sorgular yazmayı sağladı.  
+- **AND / OR Mantıksal Operatörler**: Çoklu koşulların birlikte kullanılmasını mümkün kıldı.  
+- **Temel SELECT**: Sadece gerekli sütunlar veya tüm sütunlar (`*`) seçildi.  
+- **Koşullu Filtreleme**: String karşılaştırmalar ve sayı bazlı filtrelemeler yapıldı.
+
+---
+
+### Dosya Yapısı ve Sorgu Açıklamaları
+
+| Dosya Adı                                   | Açıklama                                                                                  |
+|---------------------------------------------|-------------------------------------------------------------------------------------------|
+| `01-select-replacement-cost-between.sql`    | `film` tablosunda **replacement_cost** değerinin 12.99 ile 16.99 arasında olduğu kayıtlar. (BETWEEN ... AND kullanımı) |
+| `02-select-actor-firstname-in.sql`           | `actor` tablosunda **first_name** değerinin 'Penelope', 'Nick' veya 'Ed' olduğu kayıtlar. (IN operatörü kullanımı)   |
+| `03-select-film-rental-and-replacement-in.sql` | `film` tablosunda hem **rental_rate** hem de **replacement_cost** sütunlarında belirli değerlerin olduğu kayıtlar. (IN operatörü ve AND kombinasyonu) |
+
+---
+
+### Kullanım Notları
+
+- Sorgular **PostgreSQL** uyumludur ve `dvdrental` veri tabanında test edilmiştir.  
+- Dosyalar `02-homework` klasörü içerisinde organize edilmiştir.  
+- Her sorgu dosyasının başında sorgunun amacı ve açıklaması yorum satırı olarak eklenmiştir.  
+- Bu yapıyla hem sorguların okunabilirliği arttı hem de proje takibi kolaylaştı.
+
+---
+
+💡 **Proje Gelişimi:**  
+Bu ödev, SQL sorgularının daha etkin ve doğru yazılmasına odaklanarak, veri tabanı yönetim sistemlerinde pratik kazanmayı amaçlamaktadır.
+
+---
+
