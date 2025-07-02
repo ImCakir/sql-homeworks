@@ -78,3 +78,23 @@ Bu ödev, SQL sorgularının daha etkin ve doğru yazılmasına odaklanarak, ver
 
 ---
 
+03-homework
+ — SQL Sorguları ile İleri Seviye Veri Analizi
+
+Bu ödev kapsamında dvdrental veri tabanı kullanılarak çeşitli SQL sorguları yazılmıştır. Ödevin temel kazanımları ve önemli noktaları şunlardır:
+	•	LIKE ve ILIKE operatörleri ile metin arama:
+	•	Büyük/küçük harf duyarlı ve duyarsız arama teknikleri öğrenildi.
+	•	Joker karakterler % ve _ kullanımı pratik edildi
+	•	Çoklu koşullar AND ile birleştirildi.
+	•	Sütun değerlerine göre detaylı ve kapsamlı filtreler uygulandı.
+	•	Gerçek dünya veri tabanı örneği:
+	•	Popüler ve eğitim amaçlı kullanılan dvdrental veri tabanı üzerinden sorgulama yapıldı.
+	•	Film ve ülke gibi tablolar üzerinde sorgular yazılarak veri analizi pratik edildi.
+	•	Dosyalama ve sürüm kontrolü:
+	•	Her soru için ayrı SQL dosyaları oluşturuldu.
+	•	Dosyalar anlamlı ve standart isimlendirme ile organize edildi.
+	•	Dosyalar Git ile sürüm kontrolüne dahil edildi.
+
+⸻
+
+Bu kazanımlar sayesinde SQL sorgulama konusunda ileri seviye uygulamalar yapabilme ve karmaşık veri analizleri gerçekleştirebilme becerisi kazanılmıştır.
