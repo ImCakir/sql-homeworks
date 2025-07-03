@@ -190,3 +190,25 @@ Bu ödevde, PostgreSQL üzerinde dvdrental örnek veritabanını kullanarak daha
 	•	LIMIT 5 → Sonraki 5 sonucu al.
 	•	ORDER BY column DESC → Z’den A’ya doğru sıralar.
 	•	Tüm sorgular PostgreSQL üzerinde test edilmiştir.
+
+
+
+---
+
+### 06-Homework - Ödev 6: Ortalama, Filtreleme ve Sayma Sorguları
+
+Bu ödevde SQL'de `AVG`, `MAX`, `COUNT`, `DISTINCT` gibi fonksiyonlar ile birlikte `LIKE` ve koşullu sorgular pratik edilmiştir.
+
+Dosyalar:
+- 01-select-average-rental_rate.sql — rental_rate sütunundaki ortalama değeri verir.
+- 02-count-films-startswith-C.sql — Film ismi 'C' ile başlayan film sayısını verir.
+- 03-select-longest-film-with-rental099.sql — rental_rate 0.99 olan en uzun filmin uzunluğunu döner.
+- 04-count-distinct-replacementcost-lengthover150.sql — uzunluğu 150 dakikadan büyük filmlerin farklı replacement_cost sayılarını döner.
+
+---
+
+Önemli Notlar:
+- `AVG(column)` → Ortalama değeri döner.
+- `COUNT(*)`, `COUNT(DISTINCT ...)` → Toplam satır ve farklı değerleri sayar.
+- `MAX(column)` → En yüksek değeri bulur.
+- `LIKE 'C%'` → 'C' ile başlayan kayıtları filtreler.
