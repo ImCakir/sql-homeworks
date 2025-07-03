@@ -160,3 +160,33 @@ city tablosunda adı ‘R’ veya ‘r’ ile biten şehir sayısını verir (k�
 #### Kullanım
 	-	Bu sorguları PostgreSQL üzerinde dvdrental veri tabanında çalıştırarak filtreleme, sayma ve metin işlemleri pratiği yapabilirsiniz.
 	-Her .sql dosyasında ilgili sorunun açıklaması ve çözüm sorgusu yorum satırı olarak yer almaktadır.
+
+📁 05-Homework - Ödev 4: SQL Sorgu Uygulamaları (İleri Seviye Filtreleme & Sıralama)
+
+Bu ödevde, PostgreSQL üzerinde dvdrental örnek veritabanını kullanarak daha ileri düzey filtreleme, sıralama ve karakter arama işlemleri yapıldı. Özellikle LIKE, OFFSET, LIMIT, ORDER BY ve COUNT gibi SQL ifadeleri kullanılarak alt ve üst sınırlar, sıralama mantığı ve sonuç sayısı üzerinde işlem yapılması hedeflendi.
+
+⸻
+
+01-select-top5-films-ending-n-by-length-desc.sql
+    Film ismi 'n' harfi ile biten en uzun 5 filmi getirir.
+
+02-select-2nd5-films-ending-n-by-length-asc.sql
+    Film ismi 'n' harfi ile biten en kısa ikinci 5 filmi getirir (OFFSET + LIMIT ile).
+
+03-select-top4-customers-store1-orderby-lastname-desc.sql
+    store_id = 1 olan müşterileri last_name sütununa göre azalan sıralayıp ilk 4 kişiyi listeler.
+
+🧠 Kazanımlar
+	•	OFFSET ve LIMIT ifadeleri ile satır atlama ve sınırlama işlemlerini uygulama.
+	•	ORDER BY ASC/DESC ile sıralama yönünü ayarlama.
+	•	LIKE ve % kullanarak karakter sonu eşleşmelerini yapma.
+	•	WHERE koşulları ile çoklu filtre uygulama.
+
+⸻
+
+⚠️ Notlar
+	•	LIKE '%n' → 'n' ile biten ifadeleri getirir.
+	•	OFFSET 5 → İlk 5 sonucu atla.
+	•	LIMIT 5 → Sonraki 5 sonucu al.
+	•	ORDER BY column DESC → Z’den A’ya doğru sıralar.
+	•	Tüm sorgular PostgreSQL üzerinde test edilmiştir.
