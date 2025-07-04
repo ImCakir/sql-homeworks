@@ -212,3 +212,40 @@ Dosyalar:
 - `COUNT(*)`, `COUNT(DISTINCT ...)` → Toplam satır ve farklı değerleri sayar.
 - `MAX(column)` → En yüksek değeri bulur.
 - `LIKE 'C%'` → 'C' ile başlayan kayıtları filtreler.
+
+07-Homework - DVD Rental Veritabanı Üzerinde SQL Sorguları
+
+Bu ödevde, dvdrental örnek veri tabanı kullanılarak çeşitli SQL sorgu senaryoları gerçekleştirilmiştir. Ödev kapsamında gruplama (GROUP BY), filtreleme, koşullu listeleme ve sayma işlemleri yapılmıştır. Bu sayede SQL’in temel toplama fonksiyonları, gruplama ve koşullu sorgulama yetenekleri pratik edilmiştir.
+
+⸻
+
+Ödev Dosyaları ve Açıklamaları
+
+01-select-films-grouped-by-rating.sql
+Film tablosundaki filmleri rating değerlerine göre gruplar ve her rating için film sayısını listeler.
+
+02-select-replacement_cost-with-film-count-greater-than-50.sql
+Film tablosundaki replacement_cost değerlerine göre gruplar, film sayısı 50’den fazla olan replacement_cost değerlerini ve karşılık gelen film sayılarını sıralar.
+
+03-select-customer-count-by-store_id.sql
+Customer tablosundaki store_id değerlerine göre müşteri sayılarını gruplar ve listeler.
+
+04-select-country-with-most-cities.sql
+City tablosundaki şehir verilerini country_id sütununa göre gruplar, en fazla şehir sayısına sahip country_id bilgisini ve şehir sayısını verir.
+
+⸻
+
+Önemli Notlar ve Kazanımlar
+	•	GROUP BY ifadesiyle veriler belirli sütunlara göre gruplandırılır ve her grup için toplama, sayma gibi işlemler yapılabilir.
+	•	HAVING ile gruplama sonrası koşullar belirlenerek filtreleme yapılır. (Örneğin, film sayısı 50’den fazla olan gruplar)
+	•	COUNT() fonksiyonu belirli bir sütundaki toplam ya da koşula uyan satır sayısını döner.
+	•	Alias (takma ad) kullanımı sorgu çıktısını daha okunabilir kılar.
+	•	Sorgularda ORDER BY ile sonuçların sıralanması sağlanabilir.
+	•	Bu ödev SQL’in grup işlemlerine hakimiyet kazandırmayı amaçlar, ayrıca gerçek dünya veri tabanlarında raporlama ve analiz için temel sorgular pratiği sunar.
+
+⸻
+
+Kullanım
+	•	Her .sql dosyasının içinde ilgili sorunun açıklaması ve sorgusu yorum satırı olarak yer almaktadır.
+	•	Sorguları PostgreSQL üzerinde dvdrental veri tabanında çalıştırarak öğrenme ve pekiştirme yapabilirsiniz.
+
