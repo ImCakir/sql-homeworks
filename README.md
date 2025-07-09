@@ -249,3 +249,35 @@ Kullanım
 	•	Her .sql dosyasının içinde ilgili sorunun açıklaması ve sorgusu yorum satırı olarak yer almaktadır.
 	•	Sorguları PostgreSQL üzerinde dvdrental veri tabanında çalıştırarak öğrenme ve pekiştirme yapabilirsiniz.
 
+
+
+## Ödev 8: Employee Tablosu Yönetimi ve Mockaroo ile Veri Üretimi
+
+Bu ödevde, `employee` isimli bir tablo oluşturarak ve yöneterek SQL üzerinde veri işlemleri pratiği yaptık. Tablo yapısı aşağıdaki gibidir:
+
+- `id` (INTEGER)
+- `name` (VARCHAR(50))
+- `birthday` (DATE)
+- `email` (VARCHAR(100))
+
+### Bu ödevde öğrendiklerimiz ve yaptıklarımız:
+
+- **Tablo Oluşturma:** SQL kullanarak tablo oluşturmayı ve sütunların veri tiplerini tanımlamayı öğrendik.
+- **Veri Ekleme:** Mockaroo servisi üzerinden gerçekçi ve rastgele veriler ürettik. Üretilen verileri kullanarak `INSERT INTO` sorguları ile tabloya toplu veri ekledik.
+- **Veri Güncelleme (UPDATE):** Belirli koşullara bağlı olarak (örneğin `id`, `name`, `email` gibi sütunlara göre) kayıtları nasıl güncelleyeceğimizi pratik ettik.
+- **Veri Silme (DELETE):** Koşullara göre kayıtların nasıl silineceğini öğrendik. `DELETE` sorgularında `WHERE` kullanmanın önemini kavradık.
+- **SQL’de Filtreleme ve Koşullar:** `WHERE` ile hangi kayıtların seçileceği, güncelleneceği veya silineceği üzerinde durduk.
+- **Sorgu Sonuçlarını İnceleme:** `RETURNING *` ifadesi ile silinen veya güncellenen satırların sonuçlarını nasıl görüntüleyebileceğimizi deneyimledik.
+
+### Mockaroo Servisi Kullanımı:
+
+- [Mockaroo](https://mockaroo.com/) gerçekçi ve rastgele veri oluşturmak için kullanılan ücretsiz ve kolay bir web servisidir.
+- Mockaroo üzerinde, ödevimizde kullanacağımız sütun adları ve veri tiplerini tanımlayarak 50 adet örnek veri oluşturduk.
+- Oluşturulan verilerin SQL `INSERT` sorgularını indirip kendi veritabanımıza hızlıca ekledik.
+- Bu sayede gerçek hayatta karşılaşabileceğimiz veri yapılarıyla çalışma imkanı yakaladık, ayrıca manuel veri girişiyle uğraşmadan hızlıca veri ekleme pratik yaptık.
+
+---
+
+Bu bölümle birlikte SQL’de tablo yönetimi ve veri işlemleri konusunda kapsamlı bir deneyim kazandık. Ayrıca, dış kaynaklı veri üretim araçlarını projelerimizde nasıl kullanabileceğimizi gördük.  
+
+---
