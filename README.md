@@ -340,3 +340,34 @@ Country ve City tablolarından LEFT JOIN ile ülke ve şehir isimlerini listeley
 Payment ve Customer tablolarından RIGHT JOIN ile ödeme ve müşteri bilgilerini listeleyen sorgu.
 	•	10-homework/03-full-join-customer-rental.sql
 Customer ve Rental tablolarından FULL JOIN ile kiralama ve müşteri bilgilerini listeleyen sorgu.
+
+
+⸻
+
+Homework 11 - SQL Set Operations (Birleşim, Kesişim, Fark)
+
+Bu ödev kapsamında actor ve customer tablolarındaki first_name ve last_name sütunları üzerinde SQL’in set operations (küme işlemleri) kullanılarak çeşitli sorgular gerçekleştirildi.
+
+Öğrenilen Konular ve Kullanılan SQL Komutları:
+	•	UNION ALL: İki tablodaki first_name değerlerini tekrarlarla birlikte birleştirir.
+	•	INTERSECT ALL: İki tablonun kesişimindeki tüm first_name, last_name değerlerini tekrarlarıyla birlikte listeler.
+	•	EXCEPT / EXCEPT ALL: İlk tablodaki ancak ikinci tabloda olmayan first_name, last_name verilerini tekrarlarıyla (EXCEPT ALL) ya da tekrarsız (EXCEPT) şekilde bulur.
+
+Ödev Dosyaları ve İçerikleri:
+	•	01-union-all-firstname.sql
+	•	actor ve customer tablolarındaki first_name verilerini tekrarlarla birlikte sıralar.
+	•	02-intersect-all-firstname-lastname.sql
+	•	actor ve customer tablolarında ortak olan first_name ve last_name değerlerini tekrarlarıyla listeler.
+	•	03-except-all-firstname-lastname.sql
+	•	actor tablosunda olup customer tablosunda olmayan first_name ve last_name verilerini tekrarlarıyla gösterir.
+	•	04-except-firstname-actor-not-in-customer.sql
+	•	actor tablosundaki first_name değerlerinden customer tablosunda olmayanları tekrarsız olarak listeler.
+
+⸻
+
+Nasıl Çalıştırılır?
+
+Bu sorgular PostgreSQL üzerinde dvdrental veri tabanı kullanılarak test edilmiştir. Her .sql dosyasının içinde sorgu açıklaması ve çözüme ait SQL kodları yorum satırı olarak eklenmiştir.
+
+⸻
+
