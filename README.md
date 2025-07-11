@@ -371,3 +371,62 @@ Bu sorgular PostgreSQL üzerinde dvdrental veri tabanı kullanılarak test edilm
 
 ⸻
 
+
+
+⸻
+
+📁 12-homework
+
+Bu ödev kapsamında dvdrental veritabanı üzerinde alt sorgular (subquery), karşılaştırma operatörleri (ANY, ALL), HAVING, GROUP BY, MAX, MIN, AVG fonksiyonları kullanılarak analizler yapıldı.
+
+Her bir soruda hem SQL sorgulama becerileri hem de sorgu mantığını anlama üzerine yoğunlaşıldı. Aşağıda her bir dosya ile neler öğrenildiği detaylı şekilde açıklanmıştır.
+
+⸻
+
+✅ 01-count-films-longer-than-average.sql
+
+Soru: Film uzunluğu ortalamanın üzerinde olan kaç film vardır?
+	•	Kazanım:
+AVG() fonksiyonu ile ortalama değeri alt sorguda hesaplayıp, ana sorguda > operatörüyle karşılaştırmayı öğrendim.
+Alt sorguların WHERE koşulunda nasıl kullanıldığını deneyimledim.
+
+⸻
+
+✅ 02-count-films-with-highest-rental-rate.sql
+
+Soru: En yüksek rental_rate değerine sahip kaç film vardır?
+	•	Kazanım:
+MAX() fonksiyonu ile en yüksek değerin bulunması, ardından bu değeri ana sorguda = ile filtreleyerek kaç film olduğunu bulmayı öğrendim.
+Ayrıca bu soruda ALL operatörünün kullanım ihtimalini değerlendirdim.
+
+⸻
+
+✅ 03-films-with-lowest-rental-and-replacement.sql
+
+Soru: En düşük rental_rate ve en düşük replacement_cost değerine sahip filmleri listeleyiniz.
+	•	Kazanım:
+İki farklı sütunda en düşük değeri bulup her ikisi için koşul yazmanın pratikliğini kazandım.
+AND operatörüyle birden fazla koşulu nasıl birleştireceğimi tekrar ettim.
+Alt sorgularla MIN() fonksiyonunun birleştirilmesi üzerine alıştırma yaptım.
+
+⸻
+
+✅ 04-most-active-customers.sql
+
+Soru: En fazla sayıda alışveriş yapan müşterileri sıralayınız.
+	•	Kazanım:
+Bu soruda GROUP BY, COUNT(), HAVING, iç içe SELECT (alt sorgu) yapılarını birlikte kullandım.
+Önce her müşterinin kaç ödeme yaptığını buldum, sonra en fazla sayıyı alt sorguyla çektim.
+HAVING COUNT(*) = (...) yapısı sayesinde sadece bu maksimum sayıya ulaşan satırları filtrelemeyi öğrendim.
+Gerçek hayattaki “en aktif müşteri” gibi kavramların SQL karşılığını analiz etmeyi öğrendim.
+
+⸻
+
+📌 Genel Öğrenimler:
+	•	Subquery (Alt Sorgu) yapılarının WHERE, HAVING gibi bölümlerde nasıl kullanıldığını pekiştirdim.
+	•	ANY ve ALL gibi karşılaştırma operatörlerini uygun senaryolarda nasıl kullanacağımı öğrendim.
+	•	Toplu analizlerde GROUP BY ve HAVING koşullarının kritik rolünü uygulamalı olarak kavradım.
+	•	MIN(), MAX(), AVG(), COUNT() gibi agregat fonksiyonlarla verileri nasıl özetleyeceğimi öğrendim.
+
+⸻
+
