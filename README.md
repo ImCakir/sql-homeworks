@@ -281,3 +281,30 @@ Bu ödevde, `employee` isimli bir tablo oluşturarak ve yöneterek SQL üzerinde
 Bu bölümle birlikte SQL’de tablo yönetimi ve veri işlemleri konusunda kapsamlı bir deneyim kazandık. Ayrıca, dış kaynaklı veri üretim araçlarını projelerimizde nasıl kullanabileceğimizi gördük.  
 
 ---
+
+09-homework - INNER JOIN Sorguları
+
+Bu ödevde, dvdrental veritabanındaki farklı tablolar arasında INNER JOIN kullanarak sorgular yazdık. JOIN işlemleri ile birden fazla tablodan ilişkili verileri bir arada sorgulama pratiği yaptık.
+
+⸻
+
+Dosya ve Açıklamaları:
+	•	01-inner-join-city-country.sql
+city ve country tablolarını country_id sütunu üzerinden INNER JOIN ile birleştirerek şehir ve ülke isimlerini birlikte listeler.
+	•	02-inner-join-customer-payment.sql
+customer ve payment tablolarını customer_id sütunu üzerinden INNER JOIN ile birleştirerek ödeme bilgileri ile müşteri isimlerini birlikte getirir.
+	•	03-inner-join-customer-rental.sql
+customer ve rental tablolarını customer_id sütunu üzerinden INNER JOIN ile birleştirerek kiralama bilgileri ile müşteri isimlerini birlikte listeler.
+
+⸻
+
+Önemli Notlar:
+	•	INNER JOIN, iki veya daha fazla tabloyu ortak bir sütun üzerinden ilişkilendirerek, sadece eşleşen kayıtları getirir.
+	•	JOIN sorguları, ilişkisel veritabanlarında farklı tablolar arasındaki bağlantıları anlamak ve kullanmak için temel bir yöntemdir.
+	•	Her sorguda kullanılan JOIN koşuluna dikkat etmek, doğru ve beklenen sonuçları almak için kritiktir.
+
+⸻
+
+Kullanım:
+
+Bu sorguları PostgreSQL ortamında dvdrental veritabanı üzerinde çalıştırarak INNER JOIN işlemlerini pekiştirebilirsiniz.
