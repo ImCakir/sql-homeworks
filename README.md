@@ -308,3 +308,35 @@ customer ve rental tablolarını customer_id sütunu üzerinden INNER JOIN ile b
 Kullanım:
 
 Bu sorguları PostgreSQL ortamında dvdrental veritabanı üzerinde çalıştırarak INNER JOIN işlemlerini pekiştirebilirsiniz.
+
+10-Homework - DVD Rental Veritabanı JOIN Sorguları
+
+Bu ödevde aşağıdaki JOIN türlerini kullanarak dvdrental veritabanındaki tablolar üzerinde sorgular yazdık:
+	•	LEFT JOIN:
+country ve city tablolarını kullanarak her ülke ile ona ait şehirleri listeledik.
+Burada tüm ülkeler listelenir, şehir bilgisi olmayan ülke varsa onun yerine NULL görünür.
+	•	RIGHT JOIN:
+payment ve customer tablolarını payment_id ve customer_id ile eşleştirip, tüm müşteriler listelenirken ödeme bilgisi olanlar da gösterildi.
+Müşterinin ödeme kaydı yoksa, ödeme bilgisi NULL olarak görünür.
+	•	FULL JOIN:
+customer ve rental tablolarını tüm kayıtları kapsayacak şekilde eşleştirdik.
+Hem kiralama yapmış müşteriler hem de kiralama yapmamış müşteriler dahil edilmiştir.
+
+⸻
+
+Önemli Notlar:
+	•	LEFT JOIN sorgularında sol tablodaki tüm veriler mutlaka sonuçta yer alır. Sağ tablodan eşleşen kayıt yoksa, NULL değer döner.
+	•	RIGHT JOIN ise sağ tabloyu baz alır; sağdaki tüm kayıtlar listelenir.
+	•	FULL JOIN her iki tablodaki tüm kayıtları gösterir, eşleşmeyen sütunlarda NULL değer olur.
+	•	JOIN işlemleri tablolardaki ortak sütunlar üzerinden yapılır, ilişkili verileri bir arada görmemizi sağlar.
+	•	Bu ödevde sorguları dosyalara yazıp GitHub’a yükleyerek SQL pratiklerimizi belgeledik.
+
+⸻
+
+Dosyalar ve Açıklamaları:
+	•	10-homework/01-left-join-city-country.sql
+Country ve City tablolarından LEFT JOIN ile ülke ve şehir isimlerini listeleyen sorgu.
+	•	10-homework/02-right-join-payment-customer.sql
+Payment ve Customer tablolarından RIGHT JOIN ile ödeme ve müşteri bilgilerini listeleyen sorgu.
+	•	10-homework/03-full-join-customer-rental.sql
+Customer ve Rental tablolarından FULL JOIN ile kiralama ve müşteri bilgilerini listeleyen sorgu.
